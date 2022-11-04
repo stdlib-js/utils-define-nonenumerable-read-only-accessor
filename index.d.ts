@@ -1,7 +1,7 @@
-/**
+/*
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2019 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -16,16 +16,31 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 2.0
+
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@esm/index.d.ts"/>
+
+import { PropertyName } from '@stdlib/types/object';
 
 /**
-* Define a non-enumerable read-only accessor.
+* Getter function.
 *
-* @module @stdlib/utils-define-nonenumerable-read-only-accessor
+* @returns property value
+*/
+type Getter = () => any;
+
+/**
+* Defines a non-enumerable read-only accessor.
+*
+* ## Notes
+*
+* -   Non-enumerable read-only accessors are non-configurable.
+*
+* @param obj - object on which to define the property
+* @param prop - property name
+* @param getter - accessor
 *
 * @example
-* var setNonEnumerableReadOnlyAccessor = require( '@stdlib/utils-define-nonenumerable-read-only-accessor' );
-*
 * function getter() {
 *     return 'bar';
 * }
@@ -40,12 +55,9 @@
 *     console.error( err.message );
 * }
 */
-
-// MODULES //
-
-var main = require( './main.js' );
+declare function setNonEnumerableReadOnlyAccessor( obj: any, prop: PropertyName, getter: Getter ): void; // tslint:disable-line: max-line-length
 
 
 // EXPORTS //
 
-module.exports = main;
+export = setNonEnumerableReadOnlyAccessor;
