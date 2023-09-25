@@ -44,7 +44,7 @@ limitations under the License.
 <!-- eslint-disable id-length -->
 
 ```javascript
-import setNonEnumerableReadOnlyAccessor from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-define-nonenumerable-read-only-accessor@deno/mod.js';
+import setNonEnumerableReadOnlyAccessor from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-define-nonenumerable-read-only-accessor@v0.1.0-deno/mod.js';
 ```
 
 #### setNonEnumerableReadOnlyAccessor( obj, prop, getter )
@@ -91,7 +91,7 @@ obj.foo = 'boop';
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import setNonEnumerableReadOnlyAccessor from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-define-nonenumerable-read-only-accessor@deno/mod.js';
+import setNonEnumerableReadOnlyAccessor from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-define-nonenumerable-read-only-accessor@v0.1.0-deno/mod.js';
 
 function Foo( name ) {
     if ( !(this instanceof Foo) ) {
