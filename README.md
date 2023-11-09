@@ -69,8 +69,6 @@ var setNonEnumerableReadOnlyAccessor = require( '@stdlib/utils-define-nonenumera
 
 <!-- eslint-disable id-length -->
 
-<!-- run throws: true -->
-
 ```javascript
 function getter() {
     return 'bar';
@@ -80,8 +78,12 @@ var obj = {};
 
 setNonEnumerableReadOnlyAccessor( obj, 'foo', getter );
 
-obj.foo = 'boop';
-// throws <Error>
+try {
+    obj.foo = 'boop';
+    // throws <Error>
+} catch ( error ) {
+    console.error( error.message );
+}
 ```
 
 </section>
@@ -171,6 +173,11 @@ For more information on the project, filing bug reports and feature requests, an
 
 ---
 
+## License
+
+See [LICENSE][stdlib-license].
+
+
 ## Copyright
 
 Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
@@ -213,6 +220,8 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 [umd-url]: https://github.com/stdlib-js/utils-define-nonenumerable-read-only-accessor/tree/umd
 [esm-url]: https://github.com/stdlib-js/utils-define-nonenumerable-read-only-accessor/tree/esm
 [branches-url]: https://github.com/stdlib-js/utils-define-nonenumerable-read-only-accessor/blob/main/branches.md
+
+[stdlib-license]: https://raw.githubusercontent.com/stdlib-js/utils-define-nonenumerable-read-only-accessor/main/LICENSE
 
 [@stdlib/utils/define-property]: https://github.com/stdlib-js/utils-define-property
 
