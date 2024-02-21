@@ -44,6 +44,11 @@ limitations under the License.
 <!-- eslint-disable id-length -->
 
 ```javascript
+import setNonEnumerableReadOnlyAccessor from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-define-nonenumerable-read-only-accessor@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/utils-define-nonenumerable-read-only-accessor/tags). For example,
+
+```javascript
 import setNonEnumerableReadOnlyAccessor from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-define-nonenumerable-read-only-accessor@v0.2.0-esm/index.mjs';
 ```
 
@@ -98,7 +103,7 @@ try {
 <body>
 <script type="module">
 
-import setNonEnumerableReadOnlyAccessor from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-define-nonenumerable-read-only-accessor@v0.2.0-esm/index.mjs';
+import setNonEnumerableReadOnlyAccessor from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-define-nonenumerable-read-only-accessor@esm/index.mjs';
 
 function Foo( name ) {
     if ( !(this instanceof Foo) ) {
