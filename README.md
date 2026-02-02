@@ -35,7 +35,25 @@ limitations under the License.
 
 > [Define][@stdlib/utils/define-property] a non-enumerable **read-only** accessor.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/utils-define-nonenumerable-read-only-accessor
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
@@ -44,12 +62,7 @@ limitations under the License.
 <!-- eslint-disable id-length -->
 
 ```javascript
-import setNonEnumerableReadOnlyAccessor from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-define-nonenumerable-read-only-accessor@deno/mod.js';
-```
-The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/utils-define-nonenumerable-read-only-accessor/tags). For example,
-
-```javascript
-import setNonEnumerableReadOnlyAccessor from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-define-nonenumerable-read-only-accessor@v0.2.4-deno/mod.js';
+var setNonEnumerableReadOnlyAccessor = require( '@stdlib/utils-define-nonenumerable-read-only-accessor' );
 ```
 
 #### setNonEnumerableReadOnlyAccessor( obj, prop, getter )
@@ -98,7 +111,7 @@ try {
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import setNonEnumerableReadOnlyAccessor from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-define-nonenumerable-read-only-accessor@deno/mod.js';
+var setNonEnumerableReadOnlyAccessor = require( '@stdlib/utils-define-nonenumerable-read-only-accessor' );
 
 function Foo( name ) {
     if ( !(this instanceof Foo) ) {
@@ -152,7 +165,7 @@ try {
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -161,11 +174,6 @@ For more information on the project, filing bug reports and feature requests, an
 [![Chat][chat-image]][chat-url]
 
 ---
-
-## License
-
-See [LICENSE][stdlib-license].
-
 
 ## Copyright
 
@@ -182,11 +190,11 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/utils-define-nonenumerable-read-only-accessor.svg
 [npm-url]: https://npmjs.org/package/@stdlib/utils-define-nonenumerable-read-only-accessor
 
-[test-image]: https://github.com/stdlib-js/utils-define-nonenumerable-read-only-accessor/actions/workflows/test.yml/badge.svg?branch=v0.2.4
-[test-url]: https://github.com/stdlib-js/utils-define-nonenumerable-read-only-accessor/actions/workflows/test.yml?query=branch:v0.2.4
+[test-image]: https://github.com/stdlib-js/utils-define-nonenumerable-read-only-accessor/actions/workflows/test.yml/badge.svg?branch=main
+[test-url]: https://github.com/stdlib-js/utils-define-nonenumerable-read-only-accessor/actions/workflows/test.yml?query=branch:main
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/utils-define-nonenumerable-read-only-accessor/main.svg
-[coverage-url]: https://codecov.io/github/stdlib-js/utils-define-nonenumerable-read-only-accessor?branch=v0.2.4
+[coverage-url]: https://codecov.io/github/stdlib-js/utils-define-nonenumerable-read-only-accessor?branch=main
 
 <!--
 
@@ -213,21 +221,19 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 [esm-readme]: https://github.com/stdlib-js/utils-define-nonenumerable-read-only-accessor/blob/esm/README.md
 [branches-url]: https://github.com/stdlib-js/utils-define-nonenumerable-read-only-accessor/blob/main/branches.md
 
-[stdlib-license]: https://raw.githubusercontent.com/stdlib-js/utils-define-nonenumerable-read-only-accessor/main/LICENSE
-
-[@stdlib/utils/define-property]: https://github.com/stdlib-js/utils-define-property/tree/deno
+[@stdlib/utils/define-property]: https://github.com/stdlib-js/utils-define-property
 
 <!-- <related-links> -->
 
-[@stdlib/utils/define-nonenumerable-property]: https://github.com/stdlib-js/utils-define-nonenumerable-property/tree/deno
+[@stdlib/utils/define-nonenumerable-property]: https://github.com/stdlib-js/utils-define-nonenumerable-property
 
-[@stdlib/utils/define-nonenumerable-read-only-property]: https://github.com/stdlib-js/utils-define-nonenumerable-read-only-property/tree/deno
+[@stdlib/utils/define-nonenumerable-read-only-property]: https://github.com/stdlib-js/utils-define-nonenumerable-read-only-property
 
-[@stdlib/utils/define-nonenumerable-read-write-accessor]: https://github.com/stdlib-js/utils-define-nonenumerable-read-write-accessor/tree/deno
+[@stdlib/utils/define-nonenumerable-read-write-accessor]: https://github.com/stdlib-js/utils-define-nonenumerable-read-write-accessor
 
-[@stdlib/utils/define-nonenumerable-write-only-accessor]: https://github.com/stdlib-js/utils-define-nonenumerable-write-only-accessor/tree/deno
+[@stdlib/utils/define-nonenumerable-write-only-accessor]: https://github.com/stdlib-js/utils-define-nonenumerable-write-only-accessor
 
-[@stdlib/utils/define-read-only-accessor]: https://github.com/stdlib-js/utils-define-read-only-accessor/tree/deno
+[@stdlib/utils/define-read-only-accessor]: https://github.com/stdlib-js/utils-define-read-only-accessor
 
 <!-- </related-links> -->
 
