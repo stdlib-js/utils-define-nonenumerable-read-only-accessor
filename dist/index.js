@@ -1,5 +1,35 @@
-"use strict";var n=function(r,e){return function(){return e||r((e={exports:{}}).exports,e),e.exports}};var t=n(function(l,s){
-var i=require('@stdlib/utils-define-property/dist');function u(r,e,a){i(r,e,{configurable:!1,enumerable:!1,get:a})}s.exports=u
-});var o=t();module.exports=o;
 /** @license Apache-2.0 */
-//# sourceMappingURL=index.js.map
+
+'use strict';
+
+/**
+* Define a non-enumerable read-only accessor.
+*
+* @module @stdlib/utils-define-nonenumerable-read-only-accessor
+*
+* @example
+* var setNonEnumerableReadOnlyAccessor = require( '@stdlib/utils-define-nonenumerable-read-only-accessor' );
+*
+* function getter() {
+*     return 'bar';
+* }
+*
+* var obj = {};
+*
+* setNonEnumerableReadOnlyAccessor( obj, 'foo', getter );
+*
+* try {
+*     obj.foo = 'boop';
+* } catch ( err ) {
+*     console.error( err.message );
+* }
+*/
+
+// MODULES //
+
+var main = require( './main.js' );
+
+
+// EXPORTS //
+
+module.exports = main;
